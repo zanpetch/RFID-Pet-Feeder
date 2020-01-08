@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RFID</string>
+
+    <string name="navigation_pets">ข้อมูลสัตว์เลี้ยง</string>
+    <string name="navigation_history">ประวัติการกินอาหาร</string>
+
+
+</resources>

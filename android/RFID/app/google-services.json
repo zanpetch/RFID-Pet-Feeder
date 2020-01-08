@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "182037192141",
+    "firebase_url": "https://rfid-project-7a087.firebaseio.com",
+    "project_id": "rfid-project-7a087",
+    "storage_bucket": "rfid-project-7a087.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182037192141:android:35f17713519f7a15",
+        "android_client_info": {
+          "package_name": "com.example.rfid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182037192141-or3cp7v1jmstrtclb4taceus6kn3m329.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIc82gwFDnV9oJ1dVhh7q7F7Uh1dK8wdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182037192141-or3cp7v1jmstrtclb4taceus6kn3m329.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

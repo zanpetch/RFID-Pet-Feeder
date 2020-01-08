@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPetActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tag"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/tagTextDetailActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/scanButtontDetailActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="สแกน"
+            android:textSize="12sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/removeButtontDetailActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="นำออก"
+            android:textSize="12sp"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อสัตว์เลี้ยง"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/nameTextDetailActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:textSize="16sp"
+            android:hint="(ไม่เกิน 15 ตัวอักษร)"
+            android:textAlignment="center"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชนิดของสัตว์เลี้ยง"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <RadioGroup
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <RadioButton
+                android:id="@+id/dogRadioDetailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="หมา"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:onClick="onTypeRadioClicked"/>
+
+            <RadioButton
+                android:id="@+id/catRadioDetailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แมว"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:onClick="onTypeRadioClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/feedTextViewAddActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ปริมาณการให้อาหารต่อวัน"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/feedRadioGroupDetailActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedTextViewAddActivity"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/defaultRadioDetailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="กำหนดโดยค่าเริ่มต้น"
+                android:textSize="16sp"
+                android:onClick="onFeedRadioClicked"/>
+
+            <RadioButton
+                android:id="@+id/noLimitRadioDetailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="ไม่จำกัดปริมาณ"
+                android:textSize="16sp"
+                android:onClick="onFeedRadioClicked"/>
+
+            <RadioButton
+                android:id="@+id/userSetRadioDetailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="กำหนดโดยผู้ใช้งาน"
+                android:textSize="16sp"
+                android:onClick="onFeedRadioClicked"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_toRightOf="@id/feedRadioGroupDetailActivity">
+
+            <EditText
+                android:id="@+id/userSetTextDetailActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:hint="(หน่วยเป็นกรัม)"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:digits="1234567890"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+        <Button
+            android:id="@+id/editPetButtonDetailActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="แก้ไขข้อมูลสัตว์เลี้ยง"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#FC6E51</color>
+    <color name="colorPrimaryLow">#60008577</color>
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <color name="colorPrimaryDark">#E9573F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="overWeightColor">#B22222</color>
+    <color name="noTagColor">#C6C6CB</color>
+    <color name="emptyColor">#DA4453</color>
+    <color name="differentColor">#F6BB42</color>
+    <color name="eatColor">#008577</color>
+</resources>

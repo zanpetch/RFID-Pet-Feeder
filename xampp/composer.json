@@ -1,0 +1,10 @@
+{
+    "name": "vender/feeder",
+    "description": "Pet Feeder",
+    "type": "project",
+    "license": "GNU3",
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "4.18"
+    }
+}
